@@ -1,3 +1,16 @@
-node_modules
+# Local
+.DS_Store
+*.local
+*.log*
 
-/target/
+# Dist
+node_modules
+dist/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+src-tauri/target/
+pnpm-lock.yaml

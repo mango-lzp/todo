@@ -1,15 +1,23 @@
 {
   "name": "todo",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tr": "cd src-tauri/ && pnpm tauri dev",
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.8"
+    "@tauri-apps/cli": "^1.5.8",
+    "@rsbuild/core": "^0.2.4",
+    "@rsbuild/plugin-react": "^0.2.4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5.3.0"
   }
 }
