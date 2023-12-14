@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "tr": "cd src-tauri/ && pnpm tauri dev",
-    "dev": "rsbuild dev --open",
+    "dev": "rsbuild dev",
     "build": "rsbuild build",
     "preview": "rsbuild preview"
   },
