@@ -1,9 +1,8 @@
 import './App.css';
-
-const { invoke } = window.__TAURI__.tauri
+import { invoke } from '@/tauri';
 
 const App = () => {
-  invoke('greet', { name: 'lizhi' }).then(console.log)
+  invoke('greet', { name: 'lizhi.lzp' }).then(console.log)
 
   return (
     <div className="content">
